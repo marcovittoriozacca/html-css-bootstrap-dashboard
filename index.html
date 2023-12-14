@@ -21,7 +21,7 @@
 
         <!-- header components -->
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary py-lg-3">
+            <nav class="navbar navbar-expand-lg bg-white py-lg-3">
                 <div class="container-fluid d-block">
 
                     <div class="d-flex">
@@ -64,9 +64,52 @@
             </nav>
         </header>
 
+        <!-- web app main content: aside and central part -->
+        <main>
+            <aside class="bg-dark text-light h-100">
+
+                <div class="h-100 d-flex flex-column justify-content-between py-4">
+
+                    <ul class="p-0 m-0 list-unstyled d-flex flex-column align-items-center gap-3">
+
+                        <li class="text-capitalize">
+                            <a href="#" class="d-flex align-items-center">
+                                <i class="fas fa-house"></i>
+                                <span class="d-none d-lg-inline-block ps-3">home</span>
+                            </a>
+                        </li>
+
+                        <li class="text-capitalize">
+                            <a href="#" class="d-flex align-items-center">
+                                <i class="fas fa-chart-simple"></i>
+                                <span class="d-none d-lg-inline-block ps-3">stats</span>
+                            </a>
+                        </li>
+
+                        <li class="text-capitalize">
+                            <a href="#" class="d-flex align-items-center">
+                                <i class="fas fa-signal"></i>
+                                <span class="d-none d-lg-inline-block ps-3">signals</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul id="settings" class="p-0 m-0 list-unstyled d-flex flex-column align-items-center justify-content-center">
+                        <li class="text-capitalize">
+                            <a href="#">
+                                <i class="fas fa-gear"></i>
+                                <span class="d-none d-lg-inline-block ps-3">admin</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                
+            </aside>
+        </main>
     </div>
 
-    
+
     <!-- bootstrap JS link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

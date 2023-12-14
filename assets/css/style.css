@@ -1,3 +1,8 @@
+a{
+    color:currentColor;
+    text-decoration: none;
+}
+
 #dashboard-web-app{
     height: 100vh;
 }
@@ -9,4 +14,21 @@ header{
 .bg-gray,
 .bg-gray:focus{
     background-color: rgb(230, 230, 230);
+}
+
+main{
+    height: calc(100% - 70px);
+}
+
+aside{
+    width: 65px;
+    background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
+}
+
+/* media query ---------------------------------------- */
+@media screen and (min-width: 992px ) {
+    aside{
+        width: 150px;
+    }
 }
