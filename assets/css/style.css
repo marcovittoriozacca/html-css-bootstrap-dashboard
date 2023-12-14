@@ -1,0 +1,12 @@
+#dashboard-web-app{
+    height: 100vh;
+}
+
+header{
+    height: 70px;
+}
+
+.bg-gray,
+.bg-gray:focus{
+    background-color: rgb(230, 230, 230);
+}

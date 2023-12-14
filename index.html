@@ -16,8 +16,57 @@
 </head>
 <body>
 
-    
+    <!-- full web app container -->
+    <div id="dashboard-web-app">
 
+        <!-- header components -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary py-lg-3">
+                <div class="container-fluid d-block">
+
+                    <div class="d-flex">
+                        <!-- big and small logo -->
+                        <a class="navbar-brand m-0" href="#">
+                            <img src="./assets/img/mobile-logo.png" width="44" class="d-lg-none" alt="boolean-mobile-logo">
+                            <img src="./assets/img/logo.svg" class="d-none d-lg-block" alt="boolean-full-logo">
+                        </a>
+
+                        <!-- search form -->
+                        <form action="#" method="get" class="input-group align-content-center ms-3 ms-lg-4 me-4" role="search">        
+                                <span class="input-group-text border-0 bg-gray" id="magnifier-addon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                                <input type="search" class="text-truncate form-control ps-0 border-0 bg-gray shadow-none" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Laravel" aria-describedby="magnifier-addon">            
+                        </form>
+
+                        <!-- nav icon sections -->
+                        <div class="nav-icons d-flex gap-4 align-items-center">
+                            <!-- list, search and dots icons -->
+                            <i class="fa-solid fa-list-ul d-none d-lg-block" role="button"></i>
+                            <i class="fa-solid fa-circle-question d-none d-lg-block" role="button"></i>
+                            <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block" role="button"></i>
+    
+                            <!-- dropdown bell icon with the dropdown menu -->
+                            <div class="dropdown">
+                                <i data-bs-toggle="dropdown" role="button" aria-expanded="false" class="fa-solid fa-bell" style="color: #ff8f00;"></i>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-light">
+                                    <li><a class="dropdown-item text-capitalize text-dark" href="#">profilo</a></li>
+                                    <li><a class="dropdown-item text-capitalize text-dark" href="#">fatturazione</a></li>
+                                    <li><a class="dropdown-item text-capitalize text-dark" href="#">logout</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+    </div>
+
+    
     <!-- bootstrap JS link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
