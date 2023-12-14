@@ -33,6 +33,17 @@ aside{
 .offcanvas-width{
     min-width: 100%;
 }
+.breadcrumb{
+    --bs-breadcrumb-divider: '\226B';
+    --bs-breadcrumb-divider-color: white;
+    --bs-breadcrumb-item-padding-x: 0.25em;
+}
+.personal-font-size{
+    font-size: 0.8rem;
+}
+.my-db-header-height{
+    height: 220px;
+}
 
 
 /* media query ---------------------------------------- */
@@ -45,5 +56,14 @@ aside{
     }
     .offcanvas-width{
         min-width: 700px;
+    }
+    .breadcrumb{
+        --bs-breadcrumb-item-padding-x: 0;
+    }
+}
+
+@media screen and (min-width: 768px ) {
+    .my-db-header-height{
+        height: 120px;
     }
 }

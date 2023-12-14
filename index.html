@@ -68,6 +68,7 @@
         <main>
             <div class="d-flex h-100">
 
+                <!-- aside - left part-->
                 <aside class="bg-dark text-light h-100">
     
                     <div class="h-100 d-flex flex-column justify-content-between py-4">
@@ -109,102 +110,143 @@
                     
                 </aside>
 
+                <!-- main content - right part -->
                 <div id="center-dashboard">
                     
-                    <div class="center-dashboard-header bg-primary text-light py-3">
+                    <!-- dashboard blue header -->
+                    <div class="center-dashboard-header bg-primary text-light py-3 my-db-header-height">
 
                         <div class="container-fluid">
-                            <!-- offcanvas button -->
-                            <div class="d-flex align-items-center gap-4">
-                                <span class="text-capitalize">nuovo studente</span>
-                                <button class="btn btn-primary border rounded" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-form" aria-controls="offcanvas-form">
-                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
-                                </button>
-                            </div>
-                            <!-- offcanva -->
-                            <div class="offcanvas offcanvas-end offcanvas-width" tabindex="-1" id="offcanvas-form" aria-labelledby="offcanvas-formLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvas-formLabel">Inserisci un nuovo studente</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <div class="row flex-column gap-2 flex-md-row gap-md-0 personal-font-size">
+                                <!-- offcanvas button -->
+                                <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center gap-4 order-md-last align-self-md-start">
+                                    <span class="text-capitalize">nuovo studente</span>
+                                    <button class="btn btn-primary border rounded" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-form" aria-controls="offcanvas-form">
+                                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                    </button>
                                 </div>
-                                <div class="offcanvas-body">
-                                    
-                                    <form action="#" method="get">
-                                        <div class="row overflow-y-scroll">
-                                            <!-- form name -->
-                                            <div class="col-12 col-md-6">
-                                                <label for="new-student-name" class="form-label">Nome</label>
-                                                <input type="text" class="form-control mb-3 shadow-none" id="new-student-name" required>
+                                <!-- offcanva -->
+                                <div class="offcanvas offcanvas-end offcanvas-width" tabindex="-1" id="offcanvas-form" aria-labelledby="offcanvas-formLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvas-formLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        
+                                        <form action="#" method="get">
+                                            <div class="row overflow-y-scroll">
+                                                <!-- form name -->
+                                                <div class="col-12 col-md-6">
+                                                    <label for="new-student-name" class="form-label">Nome</label>
+                                                    <input type="text" class="form-control mb-3 shadow-none" id="new-student-name" required>
+                                                </div>
+                                                <!-- form last name -->
+                                                <div class="col-12 col-md-6">
+                                                    <label for="new-student-last-name" class="form-label">Cognome</label>
+                                                    <input type="text" class="form-control mb-3 shadow-none" id="new-student-last-name" required>
+                                                </div>
+                                                <!-- form email -->
+                                                <div class="col-12 col-md-6">
+                                                    <label for="new-student-email" class="form-label">Email</label>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text bg-gray" id="basic-addon1">@</span>
+                                                        <input type="email" class="form-control shadow-none" id="new-student-email" required>
+                                                    </div> 
+                                                </div>
+                                                <!-- form password -->
+                                                <div class="col-12 col-md-6">
+                                                    <label for="new-student-password" class="form-label">Password</label>
+                                                    <input type="password" class="form-control mb-3 shadow-none" id="new-student-password" required>
+                                                </div>
+                                                <!-- form address -->
+                                                <div class="col-12">
+                                                    <label for="new-student-address" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control mb-3 shadow-none" id="new-student-address" required>
+                                                </div>
+                                                <!-- form city -->
+                                                <div class="col-12 col-lg-4">
+                                                    <label for="new-student-city" class="form-label">Città</label>
+                                                    <input type="text" class="form-control mb-3 shadow-none" id="new-student-city" required>
+                                                </div>
+                                                <!-- form country-->
+                                                <div class="col-6 col-lg-4">
+                                                    <label for="new-student-country" class="form-label">Stato</label>
+                                                    <select name="country" id="new-student-country" class="form-select mb-3" required>
+                                                        <option value="none" class="d-none">Scegli...</option>
+                                                        <option value="italia">Italia</option>
+                                                        <option value="San Marino">San Marino</option>
+                                                        <option value="Spagna">Spagna</option>
+                                                        <option value="Germania">Germania</option>
+                                                        <option value="Svizzera">Svizzera</option>
+                                                        <option value="Francia">Francia</option>
+                                                    </select>
+                                                </div>
+                                                <!-- form cap -->
+                                                <div class="col-6 col-lg-4">
+                                                    <label for="new-student-cap" class="form-label text-uppercase">Cap</label>
+                                                    <input type="text" class="form-control mb-3 shadow-none" id="new-student-cap" required>
+                                                </div>
+                                                <!-- form photo -->
+                                                <div class="col-12">
+                                                    <label for="new-student-photo" class="form-label">Foto</label>
+                                                    <input type="file" class="form-control mb-3 shadow-none" id="new-student-photo" required>
+                                                </div>
+                                                <!-- form policy check  -->
+                                                <div class="col-12">
+                                                    <input type="checkbox" name="policy" id="policy-check-input">
+                                                    <label for="policy-check-input" class="form-label mb-3" required>Seleziona per proseguire</label>
+                                                </div>
+                                                <!-- save button / reset button -->
+                                                <div class="d-flex gap-2">
+                                                    <input type="submit" value="Salva" class="btn btn-primary">
+                                                    <input type="reset" value="Svuota" class="btn btn-warning">
+                                                </div>
                                             </div>
-                                            <!-- form last name -->
-                                            <div class="col-12 col-md-6">
-                                                <label for="new-student-last-name" class="form-label">Cognome</label>
-                                                <input type="text" class="form-control mb-3 shadow-none" id="new-student-last-name" required>
-                                            </div>
-                                            <!-- form email -->
-                                            <div class="col-12 col-md-6">
-                                                <label for="new-student-email" class="form-label">Email</label>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text bg-gray" id="basic-addon1">@</span>
-                                                    <input type="email" class="form-control shadow-none" id="new-student-email" required>
-                                                </div> 
-                                            </div>
-                                            <!-- form password -->
-                                            <div class="col-12 col-md-6">
-                                                <label for="new-student-password" class="form-label">Password</label>
-                                                <input type="password" class="form-control mb-3 shadow-none" id="new-student-password" required>
-                                            </div>
-                                            <!-- form address -->
-                                            <div class="col-12">
-                                                <label for="new-student-address" class="form-label">Indirizzo</label>
-                                                <input type="text" class="form-control mb-3 shadow-none" id="new-student-address" required>
-                                            </div>
-                                            <!-- form city -->
-                                            <div class="col-12 col-lg-4">
-                                                <label for="new-student-city" class="form-label">Città</label>
-                                                <input type="text" class="form-control mb-3 shadow-none" id="new-student-city" required>
-                                            </div>
-                                            <!-- form country-->
-                                            <div class="col-6 col-lg-4">
-                                                <label for="new-student-country" class="form-label">Stato</label>
-                                                <select name="country" id="new-student-country" class="form-select mb-3" required>
-                                                    <option value="none" class="d-none">Scegli...</option>
-                                                    <option value="italia">Italia</option>
-                                                    <option value="San Marino">San Marino</option>
-                                                    <option value="Spagna">Spagna</option>
-                                                    <option value="Germania">Germania</option>
-                                                    <option value="Svizzera">Svizzera</option>
-                                                    <option value="Francia">Francia</option>
-                                                </select>
-                                            </div>
-                                            <!-- form cap -->
-                                            <div class="col-6 col-lg-4">
-                                                <label for="new-student-cap" class="form-label text-uppercase">Cap</label>
-                                                <input type="text" class="form-control mb-3 shadow-none" id="new-student-cap" required>
-                                            </div>
-                                            <!-- form photo -->
-                                            <div class="col-12">
-                                                <label for="new-student-photo" class="form-label">Foto</label>
-                                                <input type="file" class="form-control mb-3 shadow-none" id="new-student-photo" required>
-                                            </div>
-                                            <!-- form policy check  -->
-                                            <div class="col-12">
-                                                <input type="checkbox" name="policy" id="policy-check-input">
-                                                <label for="policy-check-input" class="form-label mb-3" required>Seleziona per proseguire</label>
-                                            </div>
-                                            <!-- save button / reset button -->
-                                            <div class="d-flex gap-2">
-                                                <input type="submit" value="Salva" class="btn btn-primary">
-                                                <input type="reset" value="Svuota" class="btn btn-warning">
-                                            </div>
+                                        </form>        
+                                    </div>
+                                </div>
+    
+                                <!-- boolean piano title -->
+                                <div class="col-12 col-md-4 col-lg-6 order-md-first">
+                                    <div class="breadcrumb-links-sec">
+                                        <div class="d-flex align-items-center column-gap-2">
+                                            <h1 class="text-capitalize h2">boolean</h1>
+                                            <span class="badge rounded-pill bg-dark bg-opacity-25 text-capitalize">
+                                                piano blaze
+                                            </span>
                                         </div>
-                                    </form>        
+                                        
+                                        <!-- breadcrumb -->
+                                        <ol class="breadcrumb d-flex column-gap-1">
+                                            <li class="breadcrumb-item active">
+                                                <a href="#" class="badge rounded-pill bg-dark bg-opacity-25">3 app</a>
+                                            </li>
+            
+                                            <li class="breadcrumb-item p-0" aria-current="page">
+                                                <a href="" class="badge rounded-pill bg-dark bg-opacity-25 d-lg-none">+</a>
+                                            </li>
+            
+                                            <li class="active" aria-current="page">
+                                                <a href="" class="badge rounded-pill bg-dark bg-opacity-25 d-none d-lg-inline-block">Boolean mobile app</a>
+                                            </li>
+                                            <li class="active" aria-current="page">
+                                                <a href="" class="badge rounded-pill bg-dark bg-opacity-25 d-none d-lg-inline-block">Boolean web app</a>
+                                            </li>
+                                            <li class="active" aria-current="page">
+                                                <a href="" class="badge rounded-pill bg-dark bg-opacity-25 d-none d-lg-inline-block">Boolean blog app</a>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <!-- online students -->
+                                <div class="online-students col-12 col-md-4 col-lg-3">
+                                    <p class="mb-2">Studenti online negli ultimi 30 minuti</p>
+                                    <h2>125</h2>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
+                    
                 </div>
 
             </div>
