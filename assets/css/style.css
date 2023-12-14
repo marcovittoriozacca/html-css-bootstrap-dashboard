@@ -18,17 +18,32 @@ header{
 
 main{
     height: calc(100% - 70px);
+    width: 100%;
 }
-
 aside{
     width: 65px;
     background-image: url(../img/sidebar-bg.png);
     background-repeat: no-repeat;
 }
 
+#center-dashboard{
+    width: calc(100% - 60px);
+}
+
+.offcanvas-width{
+    min-width: 100%;
+}
+
+
 /* media query ---------------------------------------- */
 @media screen and (min-width: 992px ) {
     aside{
         width: 150px;
+    }
+    #center-dashboard{
+        width: calc(100% - 150px);
+    }
+    .offcanvas-width{
+        min-width: 700px;
     }
 }

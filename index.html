@@ -36,7 +36,7 @@
                                 <span class="input-group-text border-0 bg-gray" id="magnifier-addon">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </span>
-                                <input type="search" class="text-truncate form-control ps-0 border-0 bg-gray shadow-none" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Laravel" aria-describedby="magnifier-addon">            
+                                <input type="search" class="text-truncate form-control ps-0 border-0 bg-gray shadow-none" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Laravel" aria-describedby="magnifier-addon">      
                         </form>
 
                         <!-- nav icon sections -->
@@ -66,46 +66,149 @@
 
         <!-- web app main content: aside and central part -->
         <main>
-            <aside class="bg-dark text-light h-100">
+            <div class="d-flex h-100">
 
-                <div class="h-100 d-flex flex-column justify-content-between py-4">
+                <aside class="bg-dark text-light h-100">
+    
+                    <div class="h-100 d-flex flex-column justify-content-between py-4">
+    
+                        <ul class="p-0 m-0 list-unstyled d-flex flex-column align-items-center gap-3">
+    
+                            <li class="text-capitalize">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="fas fa-house"></i>
+                                    <span class="d-none d-lg-inline-block ps-3">home</span>
+                                </a>
+                            </li>
+    
+                            <li class="text-capitalize">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="fas fa-chart-simple"></i>
+                                    <span class="d-none d-lg-inline-block ps-3">stats</span>
+                                </a>
+                            </li>
+    
+                            <li class="text-capitalize">
+                                <a href="#" class="d-flex align-items-center">
+                                    <i class="fas fa-signal"></i>
+                                    <span class="d-none d-lg-inline-block ps-3">signals</span>
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <ul id="settings" class="p-0 m-0 list-unstyled d-flex flex-column align-items-center justify-content-center">
+                            <li class="text-capitalize">
+                                <a href="#">
+                                    <i class="fas fa-gear"></i>
+                                    <span class="d-none d-lg-inline-block ps-3">admin</span>
+                                </a>
+                            </li>
+                        </ul>
+    
+                    </div>
+                    
+                </aside>
 
-                    <ul class="p-0 m-0 list-unstyled d-flex flex-column align-items-center gap-3">
+                <div id="center-dashboard">
+                    
+                    <div class="center-dashboard-header bg-primary text-light py-3">
 
-                        <li class="text-capitalize">
-                            <a href="#" class="d-flex align-items-center">
-                                <i class="fas fa-house"></i>
-                                <span class="d-none d-lg-inline-block ps-3">home</span>
-                            </a>
-                        </li>
+                        <div class="container-fluid">
+                            <!-- offcanvas button -->
+                            <div class="d-flex align-items-center gap-4">
+                                <span class="text-capitalize">nuovo studente</span>
+                                <button class="btn btn-primary border rounded" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-form" aria-controls="offcanvas-form">
+                                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                                </button>
+                            </div>
+                            <!-- offcanva -->
+                            <div class="offcanvas offcanvas-end offcanvas-width" tabindex="-1" id="offcanvas-form" aria-labelledby="offcanvas-formLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvas-formLabel">Inserisci un nuovo studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    
+                                    <form action="#" method="get">
+                                        <div class="row overflow-y-scroll">
+                                            <!-- form name -->
+                                            <div class="col-12 col-md-6">
+                                                <label for="new-student-name" class="form-label">Nome</label>
+                                                <input type="text" class="form-control mb-3 shadow-none" id="new-student-name" required>
+                                            </div>
+                                            <!-- form last name -->
+                                            <div class="col-12 col-md-6">
+                                                <label for="new-student-last-name" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control mb-3 shadow-none" id="new-student-last-name" required>
+                                            </div>
+                                            <!-- form email -->
+                                            <div class="col-12 col-md-6">
+                                                <label for="new-student-email" class="form-label">Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text bg-gray" id="basic-addon1">@</span>
+                                                    <input type="email" class="form-control shadow-none" id="new-student-email" required>
+                                                </div> 
+                                            </div>
+                                            <!-- form password -->
+                                            <div class="col-12 col-md-6">
+                                                <label for="new-student-password" class="form-label">Password</label>
+                                                <input type="password" class="form-control mb-3 shadow-none" id="new-student-password" required>
+                                            </div>
+                                            <!-- form address -->
+                                            <div class="col-12">
+                                                <label for="new-student-address" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control mb-3 shadow-none" id="new-student-address" required>
+                                            </div>
+                                            <!-- form city -->
+                                            <div class="col-12 col-lg-4">
+                                                <label for="new-student-city" class="form-label">Città</label>
+                                                <input type="text" class="form-control mb-3 shadow-none" id="new-student-city" required>
+                                            </div>
+                                            <!-- form country-->
+                                            <div class="col-6 col-lg-4">
+                                                <label for="new-student-country" class="form-label">Stato</label>
+                                                <select name="country" id="new-student-country" class="form-select mb-3" required>
+                                                    <option value="none" class="d-none">Scegli...</option>
+                                                    <option value="italia">Italia</option>
+                                                    <option value="San Marino">San Marino</option>
+                                                    <option value="Spagna">Spagna</option>
+                                                    <option value="Germania">Germania</option>
+                                                    <option value="Svizzera">Svizzera</option>
+                                                    <option value="Francia">Francia</option>
+                                                </select>
+                                            </div>
+                                            <!-- form cap -->
+                                            <div class="col-6 col-lg-4">
+                                                <label for="new-student-cap" class="form-label text-uppercase">Cap</label>
+                                                <input type="text" class="form-control mb-3 shadow-none" id="new-student-cap" required>
+                                            </div>
+                                            <!-- form photo -->
+                                            <div class="col-12">
+                                                <label for="new-student-photo" class="form-label">Foto</label>
+                                                <input type="file" class="form-control mb-3 shadow-none" id="new-student-photo" required>
+                                            </div>
+                                            <!-- form policy check  -->
+                                            <div class="col-12">
+                                                <input type="checkbox" name="policy" id="policy-check-input">
+                                                <label for="policy-check-input" class="form-label mb-3" required>Seleziona per proseguire</label>
+                                            </div>
+                                            <!-- save button / reset button -->
+                                            <div class="d-flex gap-2">
+                                                <input type="submit" value="Salva" class="btn btn-primary">
+                                                <input type="reset" value="Svuota" class="btn btn-warning">
+                                            </div>
+                                        </div>
+                                    </form>        
+                                </div>
+                            </div>
+                        </div>
 
-                        <li class="text-capitalize">
-                            <a href="#" class="d-flex align-items-center">
-                                <i class="fas fa-chart-simple"></i>
-                                <span class="d-none d-lg-inline-block ps-3">stats</span>
-                            </a>
-                        </li>
-
-                        <li class="text-capitalize">
-                            <a href="#" class="d-flex align-items-center">
-                                <i class="fas fa-signal"></i>
-                                <span class="d-none d-lg-inline-block ps-3">signals</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul id="settings" class="p-0 m-0 list-unstyled d-flex flex-column align-items-center justify-content-center">
-                        <li class="text-capitalize">
-                            <a href="#">
-                                <i class="fas fa-gear"></i>
-                                <span class="d-none d-lg-inline-block ps-3">admin</span>
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
 
                 </div>
-                
-            </aside>
+
+            </div>
+
         </main>
     </div>
 
