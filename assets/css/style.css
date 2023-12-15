@@ -26,6 +26,10 @@ aside{
     background-repeat: no-repeat;
 }
 
+aside ul li:hover{
+    background-color: rgb(162, 162, 162);
+}
+
 #center-dashboard{
     width: calc(100% - 60px);
 }
@@ -39,7 +43,7 @@ aside{
     --bs-breadcrumb-item-padding-x: 0.25em;
 }
 .personal-font-size{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .my-db-header-height{
     height: 220px;
