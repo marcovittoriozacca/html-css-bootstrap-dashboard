@@ -267,11 +267,11 @@
 
                                                 <thead>
                                                     <tr>
-                                                        <th scope="row" class="w-40">Nome</th>
-                                                        <th scope="row" class="d-none d-lg-table-cell">Data inizio</th>
-                                                        <th scope="row" class="d-none d-md-table-cell">ROI</th>
-                                                        <th scope="row">Stato</th>
-                                                        <th scope="row">Azioni</th>
+                                                        <th scope="col">Nome</th>
+                                                        <th scope="col" class="d-none d-md-table-cell pe-3" style="width: 110px;" >Data inizio</th>
+                                                        <th scope="col" class="d-none d-md-table-cell" style="width: 65px;" >ROI</th>
+                                                        <th scope="col" style="width: 70px;">Stato</th>
+                                                        <th scope="col" style="width: 120px;">Azioni</th>
                                                     </tr>
                                                 </thead>
 
@@ -283,14 +283,39 @@
                                                                 <span>Classe 75</span>
                                                             </div>
                                                         </td>
-                                                        <td class="d-none d-lg-table-cell align-middle">15 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">15 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell align-middle">20%</td>
                                                         <td class="align-middle">
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
-                                                        <td class="d-flex flex-wrap gap-2">
-                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
-                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        <!-- modal -->
+                                                        <td>
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                                <i class="fa-solid fa-pencil py-1"></i>
+                                                            </button>
+                                                              
+
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-75">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-75" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal1">Eliminare la classe?</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        Sei sicuro di voler eliminare la classe dalla tabella?
+                                                                        </div>
+                                                                        <div class="modal-footer justify-items-start">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        
                                                         </td>
                                                     </tr>
 
@@ -301,14 +326,36 @@
                                                                 <span>Classe 76</span>
                                                             </div>
                                                         </td>
-                                                        <td class="d-none d-lg-table-cell align-middle">16 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">16 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell align-middle">20%</td>
                                                         <td class="align-middle">
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
-                                                        <td class="d-flex flex-wrap gap-2">
-                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
-                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        <td>
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                                <i class="fa-solid fa-pencil py-1"></i>
+                                                            </button>
+                                                              
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-76">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-76" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal2">Eliminare la classe?</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        Sei sicuro di voler eliminare la classe dalla tabella?
+                                                                        </div>
+                                                                        <div class="modal-footer justify-items-start">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </td>
                                                     </tr>
 
@@ -319,14 +366,36 @@
                                                                 <span>Classe 77</span>
                                                             </div>
                                                         </td>
-                                                        <td class="d-none d-lg-table-cell align-middle">17 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">17 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell align-middle">20%</td>
                                                         <td class="align-middle">
                                                             <span class="badge text-bg-warning">process</span>
                                                         </td>
-                                                        <td class="d-flex flex-wrap gap-2">
-                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
-                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        <td>
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                                <i class="fa-solid fa-pencil py-1"></i>
+                                                            </button>
+                                                              
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-77">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-77" tabindex="-1" aria-labelledby="modal3" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal3">Eliminare la classe?</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        Sei sicuro di voler eliminare la classe dalla tabella?
+                                                                        </div>
+                                                                        <div class="modal-footer justify-items-start">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </td>
                                                     </tr>
 
@@ -337,14 +406,37 @@
                                                                 <span>Classe 78</span>
                                                             </div>
                                                         </td>
-                                                        <td class="d-none d-lg-table-cell align-middle">18 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">18 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell align-middle">20%</td>
                                                         <td class="align-middle">
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
-                                                        <td class="d-flex flex-wrap gap-2">
-                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
-                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        <td>
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                                <i class="fa-solid fa-pencil py-1"></i>
+                                                            </button>
+                                                              
+
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-78">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-78" tabindex="-1" aria-labelledby="modal4" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal4">Eliminare la classe?</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        Sei sicuro di voler eliminare la classe dalla tabella?
+                                                                        </div>
+                                                                        <div class="modal-footer justify-items-start">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </td>
                                                     </tr>
 
@@ -355,14 +447,37 @@
                                                                 <span>Classe 79</span>
                                                             </div>
                                                         </td>
-                                                        <td class="d-none d-lg-table-cell align-middle">19 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">19 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell align-middle">20%</td>
                                                         <td class="align-middle">
                                                             <span class="badge text-bg-danger">failed</span>
                                                         </td>
-                                                        <td class="d-flex flex-wrap gap-2">
-                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
-                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        <td>
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                                <i class="fa-solid fa-pencil py-1"></i>
+                                                            </button>
+                                                              
+
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-79">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-79" tabindex="-1" aria-labelledby="modal5" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal5">Eliminare la classe?</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        Sei sicuro di voler eliminare la classe dalla tabella?
+                                                                        </div>
+                                                                        <div class="modal-footer justify-items-start">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </td>
                                                     </tr>
 
@@ -373,14 +488,37 @@
                                                                 <span>Classe 80</span>
                                                             </div>
                                                         </td>
-                                                        <td class="d-none d-lg-table-cell align-middle">20 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">20 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell align-middle">20%</td>
                                                         <td class="align-middle">
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
-                                                        <td class="d-flex flex-wrap gap-2">
-                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
-                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        <td>
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                                <i class="fa-solid fa-pencil py-1"></i>
+                                                            </button>
+                                                              
+
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-80">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-80" tabindex="-1" aria-labelledby="modal6" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal6">Eliminare la classe?</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        Sei sicuro di voler eliminare la classe dalla tabella?
+                                                                        </div>
+                                                                        <div class="modal-footer justify-items-start">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </td>
                                                     </tr>
 
@@ -391,14 +529,37 @@
                                                                 <span>Classe 81</span>
                                                             </div>
                                                         </td>
-                                                        <td class="d-none d-lg-table-cell align-middle">21 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">21 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell align-middle">20%</td>
                                                         <td class="align-middle">
                                                             <span class="badge text-bg-danger">failed</span>
                                                         </td>
-                                                        <td class="d-flex flex-wrap gap-2">
-                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
-                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        <td>
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                                <i class="fa-solid fa-pencil py-1"></i>
+                                                            </button>
+                                                              
+
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-81">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-81" tabindex="-1" aria-labelledby="modal7" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal7">Eliminare la classe?</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        Sei sicuro di voler eliminare la classe dalla tabella?
+                                                                        </div>
+                                                                        <div class="modal-footer justify-items-start">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </td>
                                                     </tr>
 
@@ -409,14 +570,37 @@
                                                                 <span>Classe 82</span>
                                                             </div>
                                                         </td>
-                                                        <td class="d-none d-lg-table-cell align-middle">22 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">22 Feb 2021</td>
                                                         <td class="d-none d-md-table-cell align-middle">20%</td>
                                                         <td class="align-middle">
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
-                                                        <td class="d-flex flex-wrap gap-2">
-                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
-                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        <td>
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                                <i class="fa-solid fa-pencil py-1"></i>
+                                                            </button>
+                                                              
+
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-82">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-82" tabindex="-1" aria-labelledby="modal8" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal8">Eliminare la classe?</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        Sei sicuro di voler eliminare la classe dalla tabella?
+                                                                        </div>
+                                                                        <div class="modal-footer justify-items-start">
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -480,7 +664,7 @@
                                 <div class="col-12 col-lg-4">
                                     
                                     <!-- Todo sec -->
-                                    <div id="todo" class="card">
+                                    <div id="todo" class="card mb-3">
                                         <div class="card-header ext-capitalize fs-4">
                                           Todo
                                         </div>
@@ -512,7 +696,22 @@
                                         </div>
                                     </div>
 
-                                    
+                                    <!-- user stats section -->
+                                    <div id="users-stats" class="card">
+                                        <img src="./assets/img/stats.jpeg" class="card-img-top" alt="user-stats-img">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Utenti attivi</h5>
+                                            <p class="card-text personal-font-size">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Gennaio: 1200</li>
+                                            <li class="list-group-item">Febbraio: 800</li>
+                                            <li class="list-group-item">Marzo: 1500</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link text-decoration-underline text-primary">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>

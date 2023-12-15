@@ -16,6 +16,7 @@ header{
     background-color: rgb(230, 230, 230);
 }
 
+
 main{
     height: calc(100% - 70px);
     width: 100%;
@@ -51,6 +52,23 @@ aside ul li:hover{
 }
 .my-db-header-height{
     height: 220px;
+}
+
+table td,
+table th:not(table th:first-of-type){
+    text-align: center;
+}
+
+.my-background-white{
+    background-color: white;
+}
+
+.modal-red-bg:hover{
+    background-color: rgba(255, 0, 0, 0.632);
+}
+
+.modal-green-bg:hover{
+    background-color: rgba(0, 128, 0, 0.632);
 }
 
 input[type='checkbox']:checked + label {
