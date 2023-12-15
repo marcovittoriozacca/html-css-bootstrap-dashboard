@@ -53,6 +53,9 @@ aside ul li:hover{
     height: 220px;
 }
 
+input[type='checkbox']:checked + label {
+    text-decoration: line-through;
+  }
 
 /* media query ---------------------------------------- */
 @media screen and (min-width: 992px ) {

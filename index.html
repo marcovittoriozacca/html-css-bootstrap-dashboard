@@ -254,10 +254,11 @@
 
                             <div class="row">
 
+                                <!-- left part -->
                                 <div class="col-12 col-lg-8">
 
                                     <!-- classes table section -->
-                                    <div class="card mb-3">
+                                    <div id="class-table" class="card mb-3">
                                         <div class="card-header text-capitalize fs-4">
                                           prossime classi
                                         </div>
@@ -425,7 +426,7 @@
                                     </div>
 
                                     <!-- F.A.Q. section -->
-                                    <div class="card">
+                                    <div id="faq" class="card mb-3">
                                         <div class="card-header text-uppercase fs-4">
                                           F.A.Q.
                                         </div>
@@ -473,12 +474,45 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    
                                 </div>
 
+                                <!-- right part -->
                                 <div class="col-12 col-lg-4">
+                                    
+                                    <!-- Todo sec -->
+                                    <div id="todo" class="card">
+                                        <div class="card-header ext-capitalize fs-4">
+                                          Todo
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item">
+                                                        <input type="checkbox" name="kickoff-nuove-classi" id="first-todo-element" class="me-1">
+                                                        <label for="first-todo-element">
+                                                            Kickoff nuove classi
+                                                        </label>
+                                                    </li>
 
+                                                    <li class="list-group-item">
+                                                        <input type="checkbox" name="bootstrap-lesson-75" id="boot-lesson" class="me-1">
+                                                        <label for="boot-lesson">
+                                                            Lezione su Bootstrap 5 in classe #75
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="list-group-item">
+                                                        <input type="checkbox" name="github-students-name" id="github-students" class="me-1">
+                                                        <label for="github-students">
+                                                            Controllare username github studenti
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
                                 </div>
 
                             </div>
