@@ -20,6 +20,9 @@ main{
     height: calc(100% - 70px);
     width: 100%;
 }
+body{
+    background-color: #f7f9faff;
+}
 aside{
     width: 65px;
     background-image: url(../img/sidebar-bg.png);
@@ -28,6 +31,7 @@ aside{
 
 aside ul li:hover{
     background-color: rgb(162, 162, 162);
+    cursor: pointer;
 }
 
 #center-dashboard{

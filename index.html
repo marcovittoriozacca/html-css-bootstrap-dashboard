@@ -75,21 +75,21 @@
     
                         <ul class="p-0 m-0 list-unstyled">
     
-                            <li class="text-capitalize mb-2 py-1" role="button">
+                            <li class="text-capitalize mb-2 py-1">
                                 <a href="#" class="align-items-center">
                                     <i class="fas fa-house me-lg-2"></i>
                                     <span class="d-none d-lg-inline-block">home</span>
                                 </a>
                             </li>
     
-                            <li class="text-capitalize mb-2 py-1" role="button">
+                            <li class="text-capitalize mb-2 py-1">
                                 <a href="#" class="align-items-center">
                                     <i class="fas fa-chart-simple me-lg-2"></i>
                                     <span class="d-none d-lg-inline-block">stats</span>
                                 </a>
                             </li>
     
-                            <li class="text-capitalize py-1" role="button">
+                            <li class="text-capitalize py-1">
                                 <a href="#" class="align-items-center">
                                     <i class="fas fa-signal me-lg-2"></i>
                                     <span class="d-none d-lg-inline-block">signals</span>
@@ -98,7 +98,7 @@
                         </ul>
     
                         <ul id="settings" class="p-0 m-0 list-unstyled">
-                            <li class="text-capitalize py-1" role="button">
+                            <li class="text-capitalize py-1">
                                 <a href="#">
                                     <i class="fas fa-gear me-lg-2"></i>
                                     <span class="d-none d-lg-inline-block">admin</span>
@@ -111,7 +111,7 @@
                 </aside>
 
                 <!-- main content - right part -->
-                <div id="center-dashboard">
+                <div id="center-dashboard" class="overflow-y-scroll">
                     
                     <!-- dashboard blue header -->
                     <div class="center-dashboard-header bg-primary text-light py-3 my-db-header-height">
@@ -247,6 +247,191 @@
                         </div>
                     </div>
                     
+                    <!-- main content -->
+                    <div class="center-main-content my-3">
+
+                        <div class="container-fluid">
+
+                            <div class="row">
+
+                                <div class="col-12 col-lg-8">
+
+                                    <!-- class table -->
+                                    <div class="card">
+                                        <div class="card-header text-capitalize fs-4">
+                                          prossime classi
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table" style="font-size: 0.8rem;">
+
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="w-40">Nome</th>
+                                                        <th scope="col" class="d-none d-lg-table-cell">Data inizio</th>
+                                                        <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                                                        <th scope="col">Stato</th>
+                                                        <th scope="col">Azioni</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row" class="align-middle">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <img src="./assets/img/class-avatar.jpg" width="30" alt="class-logo">
+                                                                <span>Classe 75</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-none d-lg-table-cell align-middle">15 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">20%</td>
+                                                        <td class="align-middle">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td class="d-flex flex-wrap gap-2">
+                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
+                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td scope="row" class="align-middle">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <img src="./assets/img/class-avatar.jpg" width="30" alt="class-logo">
+                                                                <span>Classe 76</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-none d-lg-table-cell align-middle">16 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">20%</td>
+                                                        <td class="align-middle">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td class="d-flex flex-wrap gap-2">
+                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
+                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td scope="row" class="align-middle">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <img src="./assets/img/class-avatar.jpg" width="30" alt="class-logo">
+                                                                <span>Classe 77</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-none d-lg-table-cell align-middle">17 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">20%</td>
+                                                        <td class="align-middle">
+                                                            <span class="badge text-bg-warning">process</span>
+                                                        </td>
+                                                        <td class="d-flex flex-wrap gap-2">
+                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
+                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td scope="row" class="align-middle">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <img src="./assets/img/class-avatar.jpg" width="30" alt="class-logo">
+                                                                <span>Classe 78</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-none d-lg-table-cell align-middle">18 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">20%</td>
+                                                        <td class="align-middle">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td class="d-flex flex-wrap gap-2">
+                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
+                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td scope="row" class="align-middle">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <img src="./assets/img/class-avatar.jpg" width="30" alt="class-logo">
+                                                                <span>Classe 79</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-none d-lg-table-cell align-middle">19 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">20%</td>
+                                                        <td class="align-middle">
+                                                            <span class="badge text-bg-danger">failed</span>
+                                                        </td>
+                                                        <td class="d-flex flex-wrap gap-2">
+                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
+                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td scope="row" class="align-middle">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <img src="./assets/img/class-avatar.jpg" width="30" alt="class-logo">
+                                                                <span>Classe 80</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-none d-lg-table-cell align-middle">20 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">20%</td>
+                                                        <td class="align-middle">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td class="d-flex flex-wrap gap-2">
+                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
+                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td scope="row" class="align-middle">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <img src="./assets/img/class-avatar.jpg" width="30" alt="class-logo">
+                                                                <span>Classe 81</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-none d-lg-table-cell align-middle">21 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">20%</td>
+                                                        <td class="align-middle">
+                                                            <span class="badge text-bg-danger">failed</span>
+                                                        </td>
+                                                        <td class="d-flex flex-wrap gap-2">
+                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
+                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td scope="row" class="align-middle">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <img src="./assets/img/class-avatar.jpg" width="30" alt="class-logo">
+                                                                <span>Classe 82</span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="d-none d-lg-table-cell align-middle">22 Feb 2021</td>
+                                                        <td class="d-none d-md-table-cell align-middle">20%</td>
+                                                        <td class="align-middle">
+                                                            <span class="badge text-bg-success">Done</span>
+                                                        </td>
+                                                        <td class="d-flex flex-wrap gap-2">
+                                                            <i class="fa-solid fa-pencil btn btn-success p-2"></i>
+                                                            <i class="fa-solid fa-trash border p-2 btn btn-danger"></i>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                              </table>
+                                              
+                                        </div> 
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 col-lg-4 bg-danger"></div>
+
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
