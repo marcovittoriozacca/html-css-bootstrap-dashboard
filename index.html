@@ -138,40 +138,40 @@
                                                 <!-- form name -->
                                                 <div class="col-12 col-md-6">
                                                     <label for="new-student-name" class="form-label">Nome</label>
-                                                    <input type="text" class="form-control mb-3 shadow-none" id="new-student-name" required>
+                                                    <input type="text" name="student-name" class="form-control mb-3 shadow-none" id="new-student-name" required>
                                                 </div>
                                                 <!-- form last name -->
                                                 <div class="col-12 col-md-6">
                                                     <label for="new-student-last-name" class="form-label">Cognome</label>
-                                                    <input type="text" class="form-control mb-3 shadow-none" id="new-student-last-name" required>
+                                                    <input type="text" name="student-last-name" class="form-control mb-3 shadow-none" id="new-student-last-name" required>
                                                 </div>
                                                 <!-- form email -->
                                                 <div class="col-12 col-md-6">
                                                     <label for="new-student-email" class="form-label">Email</label>
                                                     <div class="input-group mb-3">
                                                         <span class="input-group-text bg-gray" id="basic-addon1">@</span>
-                                                        <input type="email" class="form-control shadow-none" id="new-student-email" required>
+                                                        <input type="email" name="student-email" class="form-control shadow-none" id="new-student-email" required>
                                                     </div> 
                                                 </div>
                                                 <!-- form password -->
                                                 <div class="col-12 col-md-6">
                                                     <label for="new-student-password" class="form-label">Password</label>
-                                                    <input type="password" class="form-control mb-3 shadow-none" id="new-student-password" required>
+                                                    <input type="password" name="student-password" class="form-control mb-3 shadow-none" id="new-student-password" required>
                                                 </div>
                                                 <!-- form address -->
                                                 <div class="col-12">
                                                     <label for="new-student-address" class="form-label">Indirizzo</label>
-                                                    <input type="text" class="form-control mb-3 shadow-none" id="new-student-address" required>
+                                                    <input type="text" name="student-address" class="form-control mb-3 shadow-none" id="new-student-address" required>
                                                 </div>
                                                 <!-- form city -->
                                                 <div class="col-12 col-lg-4">
                                                     <label for="new-student-city" class="form-label">Città</label>
-                                                    <input type="text" class="form-control mb-3 shadow-none" id="new-student-city" required>
+                                                    <input type="text" name="student-city" class="form-control mb-3 shadow-none" id="new-student-city" required>
                                                 </div>
                                                 <!-- form country-->
                                                 <div class="col-6 col-lg-4">
                                                     <label for="new-student-country" class="form-label">Stato</label>
-                                                    <select name="country" id="new-student-country" class="form-select mb-3" required>
+                                                    <select name="student-country" id="new-student-country" class="form-select mb-3" required>
                                                         <option value="" class="d-none">Scegli...</option>
                                                         <option value="italia">Italia</option>
                                                         <option value="San Marino">San Marino</option>
@@ -184,16 +184,16 @@
                                                 <!-- form cap -->
                                                 <div class="col-6 col-lg-4">
                                                     <label for="new-student-cap" class="form-label text-uppercase">Cap</label>
-                                                    <input type="text" class="form-control mb-3 shadow-none" id="new-student-cap" required>
+                                                    <input type="text" name="student-cap" class="form-control mb-3 shadow-none" id="new-student-cap" required>
                                                 </div>
                                                 <!-- form photo -->
                                                 <div class="col-12">
                                                     <label for="new-student-photo" class="form-label">Foto</label>
-                                                    <input type="file" class="form-control mb-3 shadow-none" id="new-student-photo" required>
+                                                    <input type="file" name="student-photo" class="form-control mb-3 shadow-none" id="new-student-photo" required>
                                                 </div>
                                                 <!-- form policy check  -->
                                                 <div class="col-12">
-                                                    <input type="checkbox" name="policy" id="policy-check-input" required>
+                                                    <input type="checkbox" name="student-policy-checked" id="policy-check-input" required>
                                                     <label for="policy-check-input" class="form-label mb-3">Seleziona per proseguire</label>
                                                 </div>
                                                 <!-- save button / reset button -->
@@ -288,29 +288,69 @@
                                                         <td class="align-middle">
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
-                                                        <!-- modal -->
+                                                        
                                                         <td>
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                            <!-- edit button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal" data-bs-target="#class-75-edit">
                                                                 <i class="fa-solid fa-pencil py-1"></i>
                                                             </button>
-                                                              
-
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-75">
-                                                                <i class="fa-solid fa-trash py-1"></i>
-                                                            </button>
-
-                                                            <div class="modal fade" id="class-75" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+                                                            <div class="modal fade" id="class-75-edit" tabindex="-1" aria-labelledby="modal-edit-1" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
-                                                                        <h1 class="modal-title fs-5" id="modal1">Eliminare la classe?</h1>
+                                                                        <h1 class="modal-title fs-5" id="modal-edit-1">Modifica i dati della classe 75</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        
+                                                                            <form action="#" method="get" id="edit-class75-form">
+                                                                                <div class="row">
+                                                                                    <div class="col-6">
+                                                                                        <!-- edit class name -->
+                                                                                        <label for="edited-class-75-name" class="form-label">Nome classe</label>
+                                                                                        <input required type="text" name="new-class75-name" class="form-control mb-4 shadow-none" id="edited-class-75-name">
+                                                                                    </div>
+                                                                                    <!-- edit class starting date -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class-75-date" class="form-label">Data di inizio</label>
+                                                                                        <input required type="date" name="new-class75-starting-date" class="form-control mb-4 shadow-none" id="edited-class-75-date">
+                                                                                    </div>
+                                                                                    <!-- edit ROI -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class-75-roi" class="form-label">ROI</label>
+                                                                                        <input required type="number" name="new-class75-roi" min="0" max="100" class="form-control mb-4 shadow-none" id="edited-class-75-roi">
+                                                                                    </div>
+                                                                                    <!-- offset col -->
+                                                                                    <div class="offset-6"></div>
+                                                                                    
+                                                                                    <!-- save and cancel button -->
+                                                                                    <div class="col-12 d-flex justify-content-between">
+                                                                                        <input type="submit" value="Salva" class="btn btn-primary">
+                                                                                        <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Annulla</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- delete button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-75-delete">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+                                                            <div class="modal fade" id="class-75-delete" tabindex="-1" aria-labelledby="modal-delete-1" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal-delete-1">Eliminare la classe 75?</h1>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body text-start">
                                                                         Sei sicuro di voler eliminare la classe dalla tabella?
                                                                         </div>
                                                                         <div class="modal-footer justify-items-start">
-                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                                                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Elimina definitivamente</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -332,19 +372,61 @@
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
                                                         <td>
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                            <!-- edit button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal" data-bs-target="#class-76-edit">
                                                                 <i class="fa-solid fa-pencil py-1"></i>
                                                             </button>
-                                                              
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-76">
-                                                                <i class="fa-solid fa-trash py-1"></i>
-                                                            </button>
-
-                                                            <div class="modal fade" id="class-76" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
+                                                            <div class="modal fade" id="class-76-edit" tabindex="-1" aria-labelledby="modal-edit-2" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
-                                                                        <h1 class="modal-title fs-5" id="modal2">Eliminare la classe?</h1>
+                                                                        <h1 class="modal-title fs-5" id="modal-edit-2">Modifica i dati della classe 76</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        
+                                                                            <form action="#" method="get" id="edit-class76-form">
+                                                                                <div class="row">
+                                                                                    <div class="col-6">
+                                                                                        <!-- edit class name -->
+                                                                                        <label for="edited-class-76-name" class="form-label">Nome classe</label>
+                                                                                        <input required type="text" name="new-class76-name" class="form-control mb-4 shadow-none" id="edited-class-76-name">
+                                                                                    </div>
+                                                                                    <!-- edit class starting date -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class-76-date" class="form-label">Data di inizio</label>
+                                                                                        <input required type="date" name="new-class76-starting-date" class="form-control mb-4 shadow-none" id="edited-class-76-date">
+                                                                                    </div>
+                                                                                    <!-- edit ROI -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class-76-roi" class="form-label">ROI</label>
+                                                                                        <input required type="number" name="new-class76-roi" min="0" max="100" class="form-control mb-4 shadow-none" id="edited-class-76-roi">
+                                                                                    </div>
+                                                                                    <!-- offset col -->
+                                                                                    <div class="offset-6"></div>
+                                                                                    
+                                                                                    <!-- save and cancel button -->
+                                                                                    <div class="col-12 d-flex justify-content-between">
+                                                                                        <input type="submit" value="Salva" class="btn btn-primary">
+                                                                                        <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Annulla</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- delete button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-76-delete">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+                                                            <div class="modal fade" id="class-76-delete" tabindex="-1" aria-labelledby="modal-delete-2" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal-delete-2">Eliminare la classe 76?</h1>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body text-start">
@@ -371,20 +453,63 @@
                                                         <td class="align-middle">
                                                             <span class="badge text-bg-warning">process</span>
                                                         </td>
-                                                        <td>
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                        <td>                                                        
+                                                            <!-- edit button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal" data-bs-target="#class-77-edit">
                                                                 <i class="fa-solid fa-pencil py-1"></i>
                                                             </button>
-                                                              
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-77">
-                                                                <i class="fa-solid fa-trash py-1"></i>
-                                                            </button>
-
-                                                            <div class="modal fade" id="class-77" tabindex="-1" aria-labelledby="modal3" aria-hidden="true">
+                                                            <div class="modal fade" id="class-77-edit" tabindex="-1" aria-labelledby="modal-edit-3" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
-                                                                        <h1 class="modal-title fs-5" id="modal3">Eliminare la classe?</h1>
+                                                                        <h1 class="modal-title fs-5" id="modal-edit-3">Modifica i dati della classe 77</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        
+                                                                            <form action="#" method="get" id="edit-class77-form">
+                                                                                <div class="row">
+                                                                                    <div class="col-6">
+                                                                                        <!-- edit class name -->
+                                                                                        <label for="edited-class-77-name" class="form-label">Nome classe</label>
+                                                                                        <input required type="text" name="new-class77-name" class="form-control mb-4 shadow-none" id="edited-class-77-name">
+                                                                                    </div>
+                                                                                    <!-- edit class starting date -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class-77-date" class="form-label">Data di inizio</label>
+                                                                                        <input required type="date" name="new-class77-starting-date" class="form-control mb-4 shadow-none" id="edited-class-77-date">
+                                                                                    </div>
+                                                                                    <!-- edit ROI -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class-77-roi" class="form-label">ROI</label>
+                                                                                        <input required type="number" name="new-class77-roi" min="0" max="100" class="form-control mb-4 shadow-none" id="edited-class-77-roi">
+                                                                                    </div>
+                                                                                    <!-- offset col -->
+                                                                                    <div class="offset-6"></div>
+                                                                                    
+                                                                                    <!-- save and cancel button -->
+                                                                                    <div class="col-12 d-flex justify-content-between">
+                                                                                        <input type="submit" value="Salva" class="btn btn-primary">
+                                                                                        <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Annulla</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                              
+                                                            <!-- delete button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-77-delete">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-77-delete" tabindex="-1" aria-labelledby="modal-delete-3" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal-delete-3">Eliminare la classe 77?</h1>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body text-start">
@@ -412,20 +537,62 @@
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
                                                         <td>
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                            <!-- edit button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal" data-bs-target="#class-78-edit">
                                                                 <i class="fa-solid fa-pencil py-1"></i>
                                                             </button>
-                                                              
-
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-78">
-                                                                <i class="fa-solid fa-trash py-1"></i>
-                                                            </button>
-
-                                                            <div class="modal fade" id="class-78" tabindex="-1" aria-labelledby="modal4" aria-hidden="true">
+                                                            <div class="modal fade" id="class-78-edit" tabindex="-1" aria-labelledby="modal-edit-4" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
-                                                                        <h1 class="modal-title fs-5" id="modal4">Eliminare la classe?</h1>
+                                                                        <h1 class="modal-title fs-5" id="modal-edit-4">Modifica i dati della classe 78</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        
+                                                                            <form action="#" method="get" id="edit-class78-form">
+                                                                                <div class="row">
+                                                                                    <div class="col-6">
+                                                                                        <!-- edit class name -->
+                                                                                        <label for="edited-class-78-name" class="form-label">Nome classe</label>
+                                                                                        <input required type="text" name="new-class78-name" class="form-control mb-4 shadow-none" id="edited-class-78-name">
+                                                                                    </div>
+                                                                                    <!-- edit class starting date -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class-78-date" class="form-label">Data di inizio</label>
+                                                                                        <input required type="date" name="new-class78-starting-date" class="form-control mb-4 shadow-none" id="edited-class-78-date">
+                                                                                    </div>
+                                                                                    <!-- edit ROI -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class-78-roi" class="form-label">ROI</label>
+                                                                                        <input required type="number" name="new-class78-roi" min="0" max="100" class="form-control mb-4 shadow-none" id="edited-class-78-roi">
+                                                                                    </div>
+                                                                                    <!-- offset col -->
+                                                                                    <div class="offset-6"></div>
+                                                                                    
+                                                                                    <!-- save and cancel button -->
+                                                                                    <div class="col-12 d-flex justify-content-between">
+                                                                                        <input type="submit" value="Salva" class="btn btn-primary">
+                                                                                        <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Annulla</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                              
+                                                            <!-- delete button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-78-delete">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-78-delete" tabindex="-1" aria-labelledby="modal-delete-4" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal-delete-4">Eliminare la classe 78?</h1>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body text-start">
@@ -453,20 +620,62 @@
                                                             <span class="badge text-bg-danger">failed</span>
                                                         </td>
                                                         <td>
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                            <!-- edit button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal" data-bs-target="#class-79-edit">
                                                                 <i class="fa-solid fa-pencil py-1"></i>
                                                             </button>
-                                                              
-
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-79">
-                                                                <i class="fa-solid fa-trash py-1"></i>
-                                                            </button>
-
-                                                            <div class="modal fade" id="class-79" tabindex="-1" aria-labelledby="modal5" aria-hidden="true">
+                                                            <div class="modal fade" id="class-79-edit" tabindex="-1" aria-labelledby="modal-edit-5" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
-                                                                        <h1 class="modal-title fs-5" id="modal5">Eliminare la classe?</h1>
+                                                                        <h1 class="modal-title fs-5" id="modal-edit-5">Modifica i dati della classe 79</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        
+                                                                            <form action="#" method="get" id="edit-class79-form">
+                                                                                <div class="row">
+                                                                                    <div class="col-6">
+                                                                                        <!-- edit class name -->
+                                                                                        <label for="edited-class-79-name" class="form-label">Nome classe</label>
+                                                                                        <input required type="text" name="new-class79-name" class="form-control mb-4 shadow-none" id="edited-class-79-name">
+                                                                                    </div>
+                                                                                    <!-- edit class starting date -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class-79-date" class="form-label">Data di inizio</label>
+                                                                                        <input required type="date" name="new-class79-starting-date" class="form-control mb-4 shadow-none" id="edited-class-79-date">
+                                                                                    </div>
+                                                                                    <!-- edit ROI -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class-79-roi" class="form-label">ROI</label>
+                                                                                        <input required type="number" name="new-class79-roi" min="0" max="100" class="form-control mb-4 shadow-none" id="edited-class-79-roi">
+                                                                                    </div>
+                                                                                    <!-- offset col -->
+                                                                                    <div class="offset-6"></div>
+                                                                                    
+                                                                                    <!-- save and cancel button -->
+                                                                                    <div class="col-12 d-flex justify-content-between">
+                                                                                        <input type="submit" value="Salva" class="btn btn-primary">
+                                                                                        <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Annulla</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                              
+                                                            <!-- delete button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-79-delete">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-79-delete" tabindex="-1" aria-labelledby="modal-delete-5" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal-delete-5">Eliminare la classe 79?</h1>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body text-start">
@@ -494,20 +703,62 @@
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
                                                         <td>
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                            <!-- edit button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal" data-bs-target="#class-80-edit">
                                                                 <i class="fa-solid fa-pencil py-1"></i>
                                                             </button>
-                                                              
-
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-80">
-                                                                <i class="fa-solid fa-trash py-1"></i>
-                                                            </button>
-
-                                                            <div class="modal fade" id="class-80" tabindex="-1" aria-labelledby="modal6" aria-hidden="true">
+                                                            <div class="modal fade" id="class-80-edit" tabindex="-1" aria-labelledby="modal-edit-6" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
-                                                                        <h1 class="modal-title fs-5" id="modal6">Eliminare la classe?</h1>
+                                                                        <h1 class="modal-title fs-5" id="modal-edit-6">Modifica i dati della classe 80</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        
+                                                                            <form action="#" method="get" id="edit-class80-form">
+                                                                                <div class="row">
+                                                                                    <div class="col-6">
+                                                                                        <!-- edit class name -->
+                                                                                        <label for="edited-class80-name" class="form-label">Nome classe</label>
+                                                                                        <input required type="text" name="new-class80-name" class="form-control mb-4 shadow-none" id="edited-class80-name">
+                                                                                    </div>
+                                                                                    <!-- edit class starting date -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class80-date" class="form-label">Data di inizio</label>
+                                                                                        <input required type="date" name="new-class80-starting-date" class="form-control mb-4 shadow-none" id="edited-class80-date">
+                                                                                    </div>
+                                                                                    <!-- edit ROI -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class80-roi" class="form-label">ROI</label>
+                                                                                        <input required type="number" name="new-class80-roi" min="0" max="100" class="form-control mb-4 shadow-none" id="edited-class80-roi">
+                                                                                    </div>
+                                                                                    <!-- offset col -->
+                                                                                    <div class="offset-6"></div>
+                                                                                    
+                                                                                    <!-- save and cancel button -->
+                                                                                    <div class="col-12 d-flex justify-content-between">
+                                                                                        <input type="submit" value="Salva" class="btn btn-primary">
+                                                                                        <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Annulla</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <!-- delete button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-80-delete">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-80-delete" tabindex="-1" aria-labelledby="modal-delete-6" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal-delete-6">Eliminare la classe 80?</h1>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body text-start">
@@ -535,20 +786,62 @@
                                                             <span class="badge text-bg-danger">failed</span>
                                                         </td>
                                                         <td>
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                            <!-- edit button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal" data-bs-target="#class-81-edit">
                                                                 <i class="fa-solid fa-pencil py-1"></i>
                                                             </button>
-                                                              
-
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-81">
-                                                                <i class="fa-solid fa-trash py-1"></i>
-                                                            </button>
-
-                                                            <div class="modal fade" id="class-81" tabindex="-1" aria-labelledby="modal7" aria-hidden="true">
+                                                            <div class="modal fade" id="class-81-edit" tabindex="-1" aria-labelledby="modal-edit-7" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
-                                                                        <h1 class="modal-title fs-5" id="modal7">Eliminare la classe?</h1>
+                                                                        <h1 class="modal-title fs-5" id="modal-edit-7">Modifica i dati della classe 81</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        
+                                                                            <form action="#" method="get" id="edit-class81-form">
+                                                                                <div class="row">
+                                                                                    <div class="col-6">
+                                                                                        <!-- edit class name -->
+                                                                                        <label for="edited-class81-name" class="form-label">Nome classe</label>
+                                                                                        <input required type="text" name="new-class81-name" class="form-control mb-4 shadow-none" id="edited-class81-name">
+                                                                                    </div>
+                                                                                    <!-- edit class starting date -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class81-date" class="form-label">Data di inizio</label>
+                                                                                        <input required type="date" name="new-class81-starting-date" class="form-control mb-4 shadow-none" id="edited-class81-date">
+                                                                                    </div>
+                                                                                    <!-- edit ROI -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class81-roi" class="form-label">ROI</label>
+                                                                                        <input required type="number" name="new-class81-roi" min="0" max="100" class="form-control mb-4 shadow-none" id="edited-class81-roi">
+                                                                                    </div>
+                                                                                    <!-- offset col -->
+                                                                                    <div class="offset-6"></div>
+                                                                                    
+                                                                                    <!-- save and cancel button -->
+                                                                                    <div class="col-12 d-flex justify-content-between">
+                                                                                        <input type="submit" value="Salva" class="btn btn-primary">
+                                                                                        <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Annulla</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                              
+                                                            <!-- delete button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-81-delete">
+                                                                <i class="fa-solid fa-trash py-1"></i>
+                                                            </button>
+
+                                                            <div class="modal fade" id="class-81-delete" tabindex="-1" aria-labelledby="modal-delete-7" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal-delete-7">Eliminare la classe 81?</h1>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body text-start">
@@ -576,20 +869,62 @@
                                                             <span class="badge text-bg-success">Done</span>
                                                         </td>
                                                         <td>
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal">
+                                                            <!-- edit button -->
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-green-bg me-1" data-bs-toggle="modal" data-bs-target="#class-82-edit">
                                                                 <i class="fa-solid fa-pencil py-1"></i>
                                                             </button>
+                                                            <div class="modal fade" id="class-82-edit" tabindex="-1" aria-labelledby="modal-edit-8" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                        <h1 class="modal-title fs-5" id="modal-edit-8">Modifica i dati della classe 82</h1>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body text-start">
+                                                                        
+                                                                            <form action="#" method="get" id="edit-class82-form">
+                                                                                <div class="row">
+                                                                                    <div class="col-6">
+                                                                                        <!-- edit class name -->
+                                                                                        <label for="edited-class82-name" class="form-label">Nome classe</label>
+                                                                                        <input required type="text" name="new-class82-name" class="form-control mb-4 shadow-none" id="edited-class82-name">
+                                                                                    </div>
+                                                                                    <!-- edit class starting date -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class82-date" class="form-label">Data di inizio</label>
+                                                                                        <input required type="date" name="new-class82-starting-date" class="form-control mb-4 shadow-none" id="edited-class82-date">
+                                                                                    </div>
+                                                                                    <!-- edit ROI -->
+                                                                                    <div class="col-6">
+                                                                                        <label for="edited-class82-roi" class="form-label">ROI</label>
+                                                                                        <input required type="number" name="new-class82-roi" min="0" max="100" class="form-control mb-4 shadow-none" id="edited-class82-roi">
+                                                                                    </div>
+                                                                                    <!-- offset col -->
+                                                                                    <div class="offset-6"></div>
+                                                                                    
+                                                                                    <!-- save and cancel button -->
+                                                                                    <div class="col-12 d-flex justify-content-between">
+                                                                                        <input type="submit" value="Salva" class="btn btn-primary">
+                                                                                        <button type="reset" class="btn btn-danger" data-bs-dismiss="modal">Annulla</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                               
 
-                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-82">
+                                                            <button type="button" class="border rounded px-2 py-1 my-background-white modal-red-bg" data-bs-toggle="modal" data-bs-target="#class-82-delete">
                                                                 <i class="fa-solid fa-trash py-1"></i>
                                                             </button>
 
-                                                            <div class="modal fade" id="class-82" tabindex="-1" aria-labelledby="modal8" aria-hidden="true">
+                                                            <div class="modal fade" id="class-82-delete" tabindex="-1" aria-labelledby="modal-delete-8" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                         <div class="modal-header">
-                                                                        <h1 class="modal-title fs-5" id="modal8">Eliminare la classe?</h1>
+                                                                        <h1 class="modal-title fs-5" id="modal-delete-8">Eliminare la classe 82?</h1>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                         </div>
                                                                         <div class="modal-body text-start">
@@ -604,7 +939,7 @@
                                                         </td>
                                                     </tr>
                                                 </tbody>
-                                              </table>
+                                            </table>
 
                                         </div> 
                                     </div>
@@ -713,18 +1048,13 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
-
                     </div>
-
                 </div>
             </div>
         </main>
     </div>
-
 
     <!-- bootstrap JS link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
