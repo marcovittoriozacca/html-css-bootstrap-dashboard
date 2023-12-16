@@ -71,7 +71,7 @@ table th:not(table th:first-of-type){
     background-color: rgba(0, 128, 0, 0.632);
 }
 
-input[type='checkbox']:checked + label {
+input[type='checkbox']:checked + label:not(.offcanvas *) {
     text-decoration: line-through;
   }
 
